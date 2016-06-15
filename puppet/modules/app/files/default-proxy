@@ -8,7 +8,10 @@ server {
 	# Make site accessible from http://localhost/
 	server_name localhost;
 
-	location / {
-            proxy_pass http://wttr.in/Austin;
+	location /weather {
+            proxy_pass http://wttr.in/Albuquerque;
+	}
+	location /moon {
+            proxy_pass http://wttr.in/Moon;
 	}
 }
