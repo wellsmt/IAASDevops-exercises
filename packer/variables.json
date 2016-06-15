@@ -7,5 +7,6 @@
     "aws_instance_type": "t2.micro",
     "aws_region": "us-west-1",
     "aws_ssh_username": "ubuntu",
-    "ami_prefix": ""
+    "ami_prefix": "",
+    "name": ""
 }
