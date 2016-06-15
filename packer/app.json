@@ -9,7 +9,10 @@
       "instance_type": "{{user `aws_instance_type`}}",
       "ssh_username": "{{user `aws_ssh_username`}}",
       "ami_name": "{{user `ami_prefix`}}-{{timestamp}}",
-      "iam_instance_profile": "{{user `iam_instance_profile`}}"
+      "iam_instance_profile": "{{user `iam_instance_profile`}}",
+      "tags": {
+        "Name" : "{{ user `name` }}"
+      }
     }
   ]
 }
